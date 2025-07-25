@@ -1,0 +1,76 @@
+@charset "UTF-8";
+
+body {    
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgba(0, 0, 0, 0.87);
+    color: white;
+}
+
+h1 {
+    text-align: center;
+    font: italic 3em Arial, Helvetica, sans-serif;
+}
+
+h2 {
+    font-weight: 800;
+    color: yellow;
+}
+
+h2#h02 {
+    background-color: blue;
+}
+
+
+h2#h04 {
+    background-color: green;
+}
+
+p {
+    text-align: justify;
+}
+
+.p01 {
+    text-align: justify;
+    text-indent: 30px;
+}
+
+div.pc {
+    background-color: yellow;
+    border: 1.5px solid black;
+    height: 170px;
+    width: 170px;
+    display: inline-block;
+}
+.pc:hover {
+    background-color: black;
+}
+
+a.links {
+    background-color: azure;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.links:visited {
+    color: blue;
+}
+
+.links:active {
+        font: 4em sans-serif;
+}
+
+.uau::before {
+    content: '\002B94';
+}
+
+.uau::after {
+    content: '\002B94';
+}
+
+div#gastacao {
+}
+
+#gastacao:hover {
+}
+
+
+

@@ -1,0 +1,123 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: 'Pixel';
+  src: url(../fonts/Pixelify_Sans/PixelifySans-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: 'Consolas';
+  src: url(../fonts/Consolas-Regular.ttf);
+}
+
+:root {
+  --cor01: #202224;
+  --cor02: #0E4E7F;
+  --cor03: #5f3ab6;
+  --cor04: #4679A1;
+  --cor05: #A36F21;
+  --cor06: #111113;
+  --font01: 'Consolas';
+  --font02: 'Pixel';
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  font-size: 1em;
+}
+
+html, body {
+  height: 100vh;
+  background: purple url(../imagens/1e3f42e9-670d-4ea0-ae4d-428cbb8922f0.jpg) left no-repeat fixed;
+  background-size: cover;
+  color: white;
+  font-family: var(--font01);
+}
+
+header{
+  text-align: center;
+}
+
+header > spain { 
+    background-image: linear-gradient( 270deg, var(--cor05), var(--cor03) 70%);
+    border-radius: 100px;
+    padding: 15px 2px 20px 2px;
+}
+
+nav {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: var(--cor05);
+  display: inline-block;
+  font-weight: normal;
+  border-radius: 100px;
+  padding: 15px 80px 15px 0px;
+  margin-top: 15px;
+  margin-bottom: 290px;
+  text-align: center;
+}
+ 
+nav p {
+  display: inline-block;
+  padding-left: 8px;
+}
+
+nav a {
+  color: var(--cor05);
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+#brasil {
+  padding-left: 15px;
+  padding-right: 21px;
+  margin-bottom: -5px;
+}
+
+main {
+  height: 100vh;
+}
+
+main h1 {
+  font-family: var(--font02);
+}
+
+div {
+  display: inline-block;
+  background-image: linear-gradient(90deg, #493180d2, transparent 65%);
+  margin-left: 5vw;
+   padding: 120px 10px 180px 0px;
+  border-bottom-left-radius: 4.5px;
+  border-top-left-radius: 4.5px;
+}
+
+
+#minha-foto {
+  background: black url(../imagens/WhatsApp\ Image\ 2025-07-20\ at\ 18.56.46_f894d7f9.jpg) right no-repeat;
+  background-size: cover;
+  margin-left: 7vw;
+  border-radius: 8px;
+  padding: 180px 8vw 150px 150px;
+}
+
+article > h1 {
+  margin-top: -195px;
+  font-size: 4vw;
+  margin-left: 370px;
+  margin-bottom: 5px;
+}
+
+article p {
+  margin-left: 370px;
+  max-width: 35vw;
+}
+
+footer {
+  background-color: white;
+  color: #A36F21;
+  text-align: center;
+  padding: 5px;
+}
