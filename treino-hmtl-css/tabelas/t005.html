@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tabelas</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: rgba(50, 50, 50, 0.9);
+      color: rgb(113, 25, 40);
+    }
+
+    table {
+      border-collapse: collapse;
+      height: 200px;
+      width: 500px;
+      position: relative;
+    }
+
+    caption {
+      background-color: gray;
+      font-size: 1.5em;
+      font-weight: bold;
+      font-style: italic;
+      padding: 10px;
+    }
+
+    thead, tfoot {
+      background-color: rgb(162, 20, 214);
+      color: white;
+    }
+
+    thead > tr > th {
+      position: sticky;
+      top: -0;
+      background-color: rgb(162, 20, 214);
+    }
+
+    td, th {
+      padding: 10px;
+      border: 1px solid black;
+    }
+
+    td.num {
+      text-align: right;
+    }
+
+    tbody > tr:nth-child(even) {
+      background-color: rgba(255, 255, 255, 0.682);
+    }
+
+    tfoot td {
+      font-weight: bold;
+    }
+
+  </style>
+</head>
+<body>
+  <table>
+    <caption>Treino de Tabela Grande</caption>
+    <thead>
+      <tr>
+        <th scope="col">
+          Estado
+        </th>
+        <th scope="col">
+          População
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>A</td>
+        <td class="num">000000001</td>
+      </tr>
+      <tr>
+        <td>B</td>
+        <td class="num">000000002</td>
+      </tr>
+      <tr>
+        <td>B</td>
+        <td class="num">000000003</td>
+      </tr>
+      <tr>
+        <td>C</td>
+        <td class="num">000000004</td>
+      </tr>
+      <tr>
+        <td>D</td>
+        <td class="num">000000005</td>
+      </tr>
+       <tr>
+        <td>A</td>
+        <td class="num">000000001</td>
+      </tr>
+      <tr>
+        <td>B</td>
+        <td class="num">000000002</td>
+      </tr>
+      <tr>
+        <td>B</td>
+        <td class="num">000000003</td>
+      </tr>
+      <tr>
+        <td>C</td>
+        <td class="num">000000004</td>
+      </tr>
+      <tr>
+        <td>D</td>
+        <td class="num">000000005</td>
+      </tr>
+       <tr>
+        <td>A</td>
+        <td class="num">000000001</td>
+      </tr>
+      <tr>
+        <td>B</td>
+        <td class="num">000000002</td>
+      </tr>
+      <tr>
+        <td>B</td>
+        <td class="num">000000003</td>
+      </tr>
+      <tr>
+        <td>C</td>
+        <td class="num">000000004</td>
+      </tr>
+      <tr>
+        <td>D</td>
+        <td class="num">000000005</td>
+      </tr>
+       <tr>
+        <td>A</td>
+        <td class="num">000000001</td>
+      </tr>
+      <tr>
+        <td>B</td>
+        <td class="num">000000002</td>
+      </tr>
+      <tr>
+        <td>B</td>
+        <td class="num">000000003</td>
+      </tr>
+      <tr>
+        <td>C</td>
+        <td class="num">000000004</td>
+      </tr>
+      <tr>
+        <td>D</td>
+        <td class="num">000000005</td>
+      </tr>
+       <tr>
+        <td>A</td>
+        <td class="num">000000001</td>
+      </tr>
+      <tr>
+        <td>B</td>
+        <td class="num">000000002</td>
+      </tr>
+      <tr>
+        <td colspan="1" rowspan="1">B</td>
+        <td class="num">000000003</td>
+      </tr>
+      <tr>
+        <td>D</td>
+        <td class="num">000000005</td>
+      </tr>
+
+    </tbody>
+    <tfoot>
+      <tr>
+        <th scope="row">População Total</th>
+        <td class="num">000653915</td>
+      </tr>
+    </tfoot>
+  </table>
+</body>
+</html>
