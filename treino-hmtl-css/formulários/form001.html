@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Treino Formulário 01</title>
+</head>
+<body>
+    <h1>Treino com alguns ATRIBUTO e TYPE</h1>
+    <form action="form.php" method="post" autocomplete="on">
+      <p>
+        <label for="iname">Nome:</label>
+        <input type="text" name="name" id="iname" required minlength="4" maxlength="15" autocomplete="username" size="10" placeholder="Digite o usuário">
+      </p>
+      <p>
+        <label for="ipassword">Senha:</label>
+        <input type="password" name="password" id="ipassword" required minlength="8" maxlength="15" autocomplete="current-password" size="8" placeholder="mín 8 letras">
+      </p>
+      <p>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Apagar">
+      </p>
+    </form>
+</body>
+</html>
