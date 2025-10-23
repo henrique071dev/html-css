@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Treino de Formulário</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    #button {
+      text-align: right;
+    }
+  </style>
+</head>
+<body>
+    <h1>Cadastro do usuário</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <fieldset>
+          <legend>Dados pessoais</legend>
+          <p>
+            <label for="iname">Nome: </label>
+            <input type="text" name="name" id="iname" required  autocomplete="name" placeholder="Nome completo">
+          </p>
+                  <p>
+            <label for="iano">Data de nascimento: </label>
+            <input type="date" name="ano" id="iano" required autocomplete="bday-month">
+          </p>
+
+          <p>
+          <label for="itel">Telefone: </label>
+          <input type="tel" name="tel" id="itel" required autocomplete="tel" pattern="^\(\d{2}\)\d{4,5}-[0-9]{4}$" placeholder="(xx) xxxxx-xxxx">
+        </p>
+
+          <p>
+            <label for="iemail">E-mail: </label>
+            <input type="email" name="email" id="iemail" required autocomplete="email" placeholder="seuemail@gmail.com">
+          </p>
+          <p>
+            <label for="isenha">Senha nova: </label>
+            <input type="password" name="senha" id="isenha" required  ="new-password" placeholder="Mínimo de 8 dígitos" minlength="8" maxlength="20">
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Outros dados</legend>
+          <p>  
+          Sexo:
+          <input type="radio" name="sexo" id="imasc" checked>
+          <label for="imasc">Masculino</label>
+          <input type="radio" name="sexo" id="ifemi">
+          <label for="ifemi">Feminino</label>
+          </p>
+
+          <p>
+            <label for="iest">Estado: </label>
+            <select name="est" id="iest">
+              <optgroup label="Nordeste">
+                <option value="Bahia" selected>BA</option>
+                <option value="Ceará">CE</option>
+                <option value="Pernamuco">PE</option>
+                <option value="Alagoas">AL</option>
+              </optgroup>
+              <optgroup label="Região Sul">
+                <option value="Rio Grande do Sul">RS</option>
+                <option value="Santa Catarina">SC</option>
+                <option value="Paraná">PR</option>
+              </optgroup>
+            </select>
+          </p>
+
+          <p>
+            Time favorito: 
+            <input type="checkbox" name="bahia" id="ibahia" checked>
+            <label for="ibahia">Bahia</label>
+            <input type="checkbox" name="flamengo" id="iflamengo">
+            <label for="iflamengo">Flamengo</label>
+            <input type="checkbox" name="palmeiras" id="ipalmeiras">
+            <label for="ipalmeiras">Palmeiras</label>
+          </p>
+
+          <p>
+              <label for="iprof">Profissão:</label>  
+              <input type="text" name="prof" id="iprof" list="listprof">
+              <datalist id="listprof">
+                <option value="dev">Desenvolvedor</option>
+                <option value="adm">Administração</option>
+                <option value="outros">Outros</option>
+              </datalist>
+          </p>
+
+          <p>
+            <label for="icolor">Cor favorita: </label>
+            <input type="color" name="color" id="icolor" value="#000fff">
+          </p>
+
+          <p>
+            <label for="iimg">Envie uma foto sua: </label>
+            <input type="file" name="img" id="iimg">
+          </p>
+        </fieldset>
+        
+        <fieldset>
+          <legend>FeedBack</legend>
+          <label for="ifeed">Avalie o site: </label>
+          <input type="range" name="feed" id="ifeed" min="1" max="5" value="5" step="0.1" oninput="iback.innerHTML = Number(ifeed.value)">
+          <output name="back" id="iback">5</output> <br>
+
+          <textarea name="mensg" id="imensg" placeholder="Relate sua experiência:"></textarea>
+          
+        </fieldset>
+        
+
+
+        <p id="button">
+          <input type="submit" value="Enviar">
+          <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
