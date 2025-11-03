@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Media Query e Formulários</title>
+  <link rel="stylesheet" href="estilos/style.css" media="">
 </head>
 <body>
     <h1>Media Query e Formulários</h1>
@@ -82,7 +83,7 @@
                </p>
 
                <p>
-                  <label for="iprof">Qual a sua Profissão</label>
+                  <label for="iprof">Qual a sua Profissão</label><br>
                   <input type="text" name="prof" id="iprof" list="profession">
                   <datalist id="profession">
                       <option value="dev">Desenvolvedor</option>
@@ -92,13 +93,13 @@
                   </datalist>
                </p>
 
-               <p>
+               <p  id="caixa">
                     <input type="checkbox" name="noti" id="inoti" checked> <label for="inoti">Concordo em ativar as *Notificações* </label> <br>
                     <input type="checkbox" name="termos" id="itermos" required> <label for="itermos">Concordo com os *Termos* do site e autorizo o uso dos meus dados cadastrais.</label> <br>
                     <input type="checkbox" name="idade" id="iidade" required> <label for="iidade">Entendo o conteúdo abordado e concordo ter a *idade mínima* requerida (*16 years*) para uso do site.</label>
                </p>
             </fieldset>
-            <fieldset>
+            <fieldset id="feedback">
               <legend>FeedBack ★★★★★</legend>
               <label for="iavali">Que nota você da para o nosso sistema de cadastro?</label><br>
               <input type="range" name="avali" id="iavali" min="1" max="5" value="5" step="1"oninput="ifeed.innerHTML = Number(iavali.value)">
@@ -113,5 +114,4 @@
           <input type="reset" value="Limpar">
         </p>
     </form>
-</body>
 </html>
