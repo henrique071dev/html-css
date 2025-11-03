@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Media Query e Formulários</title>
+</head>
+<body>
+    <h1>Media Query e Formulários</h1>
+    <form action="form.php" method="post" autocomplete="on">
+            
+            <fieldset>
+              <legend>Registro do usuário</legend>
+               <p>
+                  <label for="iname">Nome </label>
+                  <input type="text" name="name" id="iname" autocomplete="name" minlength="4" maxlength="35" size="25" required placeholder="Nome Completo">
+               </p>
+
+               <p>
+                  <label for="iemail">E-mail </label>
+                  <input type="email" name="email" id="iemail" autocomplete="email" size="24" required placeholder="xxxxxxxxxxxx@xxxxxx.com">
+               </p>
+
+               <p>
+                  <label for="ipassword">Senha </label>
+                  <input type="password" name="password" id="ipassword" autocomplete="new-password" minlength="8" size="25" required placeholder="Mínimo de 8 Dígitos">
+               </p>
+
+               <p>
+                  <label for="iphone">Telefone </label>
+                  <input type="tel" name="phone" id="iphone" autocomplete="tel" maxlength="11" size="23" pattern="^\(\d{2}\)\d{4,5}-[0-9]{4}$" placeholder="(xx) xxxxx-xxxx">
+               </p>
+
+               <p>
+                 Sexualidade: 
+                 <input type="radio" name="sexo" id="imasculino" checked>
+                 <label for="imasculino">Masculino</label>
+                 <input type="radio" name="sexo" id="ifeminino">
+                 <label for="ifeminino">Feminino</label>
+               </p>
+
+               <p>
+                  <label for="iest">Estado</label>
+                  <select name="est" id="iest">
+                      <optgroup label="Norte">
+                        <option value="acre">AC</option>
+                        <option value="amapa">AP</option>
+                        <option value="amazonas">AM</option>
+                        <option value="para">PA</option>
+                        <option value="rondonia">RO</option>
+                        <option value="roraima">RR</option>
+                        <option value="tocantins">TO</option>
+                      </optgroup>
+                      <optgroup label="Nordeste">
+                        <option value="bahia" selected>BA</option>
+                        <option value="maranhao">MA</option>
+                        <option value="piaui">PI</option>
+                        <option value="ceara">CE</option>
+                        <option value="rio-grande-do-norte">RN</option>
+                        <option value="paraiba">PB</option>
+                        <option value="pernambuco">PE</option>
+                        <option value="alagoas">AL</option>
+                        <option value="sergipe">SE</option>
+                      </optgroup>
+                      <optgroup label="Centro-Oeste">
+                        <option value="Goias">GO</option>
+                        <option value="mato-grosso">MT</option>
+                        <option value="mato-grosso-do-sul">MS</option>
+                      </optgroup>
+                      <optgroup label="Sudeste">
+                        <option value="sao-paulo">SP</option>
+                        <option value="rio-de-janeiro">RJ</option>
+                        <option value="minas-gerais">MG</option>
+                        <option value="espirito-santo">ES</option>
+                      </optgroup>
+                      <optgroup label="Sul">
+                        <option value="parana">PR</option>
+                        <option value="santa-catarina">SC</option>
+                        <option value="rio-grande-do-sul">RS</option>
+                      </optgroup>
+                  </select>
+               </p>
+
+               <p>
+                  <label for="iprof">Qual a sua Profissão</label>
+                  <input type="text" name="prof" id="iprof" list="profession">
+                  <datalist id="profession">
+                      <option value="dev">Desenvolvedor</option>
+                      <option value="adv">Advogado</option>
+                      <option value="atm">Autônomo</option>
+                      <option value="dsg">Designer</option>
+                  </datalist>
+               </p>
+
+               <p>
+                    <input type="checkbox" name="noti" id="inoti" checked> <label for="inoti">Concordo em ativar as *Notificações* </label> <br>
+                    <input type="checkbox" name="termos" id="itermos" required> <label for="itermos">Concordo com os *Termos* do site e autorizo o uso dos meus dados cadastrais.</label> <br>
+                    <input type="checkbox" name="idade" id="iidade" required> <label for="iidade">Entendo o conteúdo abordado e concordo ter a *idade mínima* requerida (*16 years*) para uso do site.</label>
+               </p>
+            </fieldset>
+            <fieldset>
+              <legend>FeedBack ★★★★★</legend>
+              <label for="iavali">Que nota você da para o nosso sistema de cadastro?</label><br>
+              <input type="range" name="avali" id="iavali" min="1" max="5" value="5" step="1"oninput="ifeed.innerHTML = Number(iavali.value)">
+              <output name="feed" id="ifeed">5</output><br><br>
+              <label for="iexpe">Conte sua experiência abaixo:</label><br>
+              <textarea name="expe" id="iexpe" placeholder="Digite aqui..."></textarea>
+            </fieldset>               
+
+
+        <p>
+          <input type="submit" value="Enviar">
+          <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
