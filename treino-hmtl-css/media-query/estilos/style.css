@@ -20,6 +20,7 @@ h1 {
 fieldset {
     padding: 20px 20px 30px 20px;
     margin-top: 30px;
+    background-color: rgb(196, 196, 196);
 }
 
 p {
@@ -31,4 +32,25 @@ p#caixa {
   padding-top: 50px;
   text-align: justify;
   text-align: right;
+}
+
+#buttons {
+    padding-top: 10px;
+    text-align: right;
+}
+
+#enviar {
+    font-weight: bolder;
+    background-color: rgb(85, 235, 85);
+    padding: 3px;
+}
+
+#limpar {
+    background-color: rgb(245, 62, 62);
+    padding: 3px; 
+    font-weight: bolder;
+}
+
+#feedback {
+    display: block;
 }

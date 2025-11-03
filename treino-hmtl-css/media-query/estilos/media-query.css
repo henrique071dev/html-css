@@ -1,0 +1,39 @@
+@charset "UTTF-8";
+
+@media print {
+    #feedback {
+      display: none;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        background-color: rgb(82, 198, 236);
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 992px) {
+    body {
+        background-color: lightgreen;
+    }
+
+    #enviar {
+        background-color: rgb(228, 228, 91);
+    } 
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+      body {
+          background-color: lightsalmon;
+      }
+}
+
+@media screen and (min-width: 1200px) {
+    body {
+        background-color: rgb(206, 67, 67);
+    }
+
+    #limpar {
+        background-color: rgb(65, 65, 212);
+    }
+}

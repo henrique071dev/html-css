@@ -4,7 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Media Query e Formulários</title>
-  <link rel="stylesheet" href="estilos/style.css" media="">
+  <link rel="stylesheet" href="estilos/style.css">
+  <link rel="stylesheet" href="estilos/media-query.css" media="all">
 </head>
 <body>
     <h1>Media Query e Formulários</h1>
@@ -29,7 +30,7 @@
 
                <p>
                   <label for="iphone">Telefone </label>
-                  <input type="tel" name="phone" id="iphone" autocomplete="tel" maxlength="11" size="23" pattern="^\(\d{2}\)\d{4,5}-[0-9]{4}$" placeholder="(xx) xxxxx-xxxx">
+                  <input type="tel" name="phone" id="iphone" autocomplete="tel" maxlength="16" size="23" pattern="^\(\d{2}\)\d{4,5}-[0-9]{4}$" placeholder="(xx) xxxxx-xxxx">
                </p>
 
                <p>
@@ -109,9 +110,9 @@
             </fieldset>               
 
 
-        <p>
-          <input type="submit" value="Enviar">
-          <input type="reset" value="Limpar">
+        <p id="buttons">
+          <input id="limpar" type="reset" value="Limpar">
+          <input id="enviar" type="submit" value="Enviar">
         </p>
     </form>
 </html>
