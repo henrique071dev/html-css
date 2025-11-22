@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flex-grow & Flex-shrink</title>
+  <style>
+    div.Conteiner {
+        background-color: chocolate;
+        display: flex;
+        flex-flow: row nowrap;
+        margin-top: 50px;
+    }
+
+    div.item {
+        background-color: blue;
+        border: 1px solid white;
+        text-align: center;
+    }
+
+    /*EXEMPLO 1*/
+
+    div#cxA {
+        flex: 0 1 150px;
+    }
+    
+    div#cxB {
+        flex: 0 1 150px;
+    }
+    
+    div#cxC {
+        flex: 0 1 150px;
+    }
+
+    /*EXEMPLO 2*/
+    
+    div#cxD {
+        flex: 0 1 150px;
+    }
+    
+    div#cxE {
+        flex: 2 1 150px;
+    }
+    
+    div#cxF {
+        flex: 1  1 150px;
+    }
+
+    /*EXEMPLO 3*/
+    
+    div#cxG {
+        flex: 0 1 250px;
+    }
+    
+    div#cxH {
+        flex: 0 0 250px;
+    }
+    
+    div#cxI {
+        flex: 0 2 250px;
+    }
+    
+  </style>
+</head>
+<body>
+
+    <div Class="Conteiner">
+      <div class="item" id="cxA">A</div>
+      <div class="item" id="cxB">B</div>
+      <div class="item" id="cxC">C</div>
+    </div>
+
+    <div Class="Conteiner">
+      <div class="item" id="cxD">D</div>
+      <div class="item" id="cxE">E</div>
+      <div class="item" id="cxF">F</div>
+    </div>
+
+    <div Class="Conteiner">
+      <div class="item" id="cxG">G</div>
+      <div class="item" id="cxH">H</div>
+      <div class="item" id="cxI">I</div>
+    </div>
+
+</body>
+</html>
